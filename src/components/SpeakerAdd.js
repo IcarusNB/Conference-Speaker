@@ -1,5 +1,3 @@
-
-
 function SpeakerAdd ({ eventYear, insertRecord }) {
     return (
       <a href="#" className="addSes">
