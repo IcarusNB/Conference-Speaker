@@ -1,15 +1,18 @@
 import Layout from './Layout'
 import Header from './Header'
 import Speakers from './Speakers'
+import { AuthProvider } from '../contexts/AuthContext'
 
 function App () {
   return (
-    <Layout startingTheme="light">
-      <div>
-        <Header />
-        <Speakers />
-      </div>
-    </Layout>
+    <AuthProvider initialLoggedInUser="Icarus">
+      <Layout startingTheme="light">
+        <div>
+          <Header />
+          <Speakers />
+        </div>
+      </Layout>
+    </AuthProvider>
   )
 }
 
